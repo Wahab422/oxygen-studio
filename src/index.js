@@ -11,11 +11,8 @@ import { logger } from './utils/logger';
 // Page registry - map page names to their dynamic import functions
 // This enables code splitting - only the current page's code is loaded
 const pageRegistry = {
-  home: () => import('./pages/home').then((m) => m.initHomePage),
-  about: () => import('./pages/about').then((m) => m.initAboutPage),
-  contact: () => import('./pages/contact').then((m) => m.initContactPage),
-  faq: () => import('./pages/faq').then((m) => m.initFaqPage),
-  news: () => import('./pages/news').then((m) => m.initNewsPage),
+  home: () => import('./pages/home').then((m) => m.initHomePage)
+
 };
 
 /**
